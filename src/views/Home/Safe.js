@@ -1,0 +1,34 @@
+import React from 'react'
+import { Box, Container, Grid, Typography } from '@mui/material'
+import Divider from '@/src/components/Divider'
+import { SECURED_ASSETS } from '@/src/constants/constants'
+
+const Safe = () => (
+  <Container
+    sx={{
+      background: 'transparent url(safe.png) 0% 0% no-repeat padding-box',
+      backgroundSize: { xs: '100% auto', md: '70% auto' },
+      minHeight: '40vw',
+    }}
+  >
+    <Divider />
+    <Box sx={{ width: { md: '70%', lg: '50%' }, textAlign: { xs: 'center', md: 'right' }, ml: { md: 'auto' } }}>
+      <Typography sx={{ color: '#97C9D4', my: 3 }}>Is it safe?</Typography>
+      <Typography sx={{ fontSize: { xs: 18, md: 48 }, fontWeight: 500, color: '#CADADC', mb: 2 }}>
+        Your assets, secured
+      </Typography>
+      <Typography sx={{ fontSize: 16, color: '#90C4CF', mb: 4 }}>
+        Rest assured, your experience on Mr. Gain is protected by state-of-the-art smart contracts. Our platform undergoes regular audits to guarantee the security and integrity of your transactions. We prioritize your peace of mind and strive to provide a trustworthy and reliable environment for all our users.
+      </Typography>
+      <Grid container spacing={2} sx={{ opacity: 0.6, width: { md: '80%' }, ml: 'auto', mb: 3 }}>
+        {SECURED_ASSETS.map(item => (
+          <Grid key={`sa-${item.id}`} item xs={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', px: 3 }}>
+            <img src={item.url} width='100%' />
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
+  </Container>
+)
+
+export default Safe
