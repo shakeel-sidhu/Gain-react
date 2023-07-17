@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Container, Typography, Link } from '@mui/material'
 import { FOOTER_MENU, SOCIALS } from '../constants/constants'
 
 const Footer = () => (
@@ -14,7 +14,11 @@ const Footer = () => (
       <Box sx={{ display: 'flex', textAlign: { xs: 'center', md: 'left' }, mb: 6 }}>
         <Box sx={{ flexDirection: 'column', justifyContent: 'center', flex: 1, textAlign: 'center', display: { xs: 'none', md: 'flex' } }}>
           {FOOTER_MENU.map(item => (
-            <Typography key={`fm-${item.id}`} sx={{ color: '#FFF', fontSize: 20, mb: 5 }}>{item.title}</Typography>
+          <Box key={`fm-${item.id}`} sx={{  mb: 5,}}>
+            <Link sx={{fontSize: 20,color: '#FFF',textDecoration: "none",cursor:"pointer","&:hover": {
+              fontWeight:"bold",
+          },}}>{item.title}</Link>
+          </Box>
           ))}
         </Box>
         <Box sx={{ flex: 1, color: '#FFFFFF', opacity: 0.7 }}>

@@ -6,6 +6,9 @@ import { MENUS } from '../constants/constants'
 const Header = () => {
   const isMedium = useMediaQuery((theme) => theme.breakpoints.between('xs', 'md'))
   const [opened, setOpened] = useState(false)
+  const clickHandler = ()=>{
+    console.log("Click Handler")
+  }
 
   return (
     <Box
@@ -20,16 +23,22 @@ const Header = () => {
         px: { xs: 3.5, md: 4.5 },
       }}>
       <Box sx={{ width: { xs: 114, md: 229 }, height: { xs: 54, md: 110 }, display: 'flex' }}>
-        <img src='logo.svg' />
+        <img src='/resources/Logo.svg' />
       </Box>
       {!isMedium && (
         <>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             {MENUS.map(menu => (
-              menu.id < 6 && <Button key={`d-${menu.id}`} sx={{ color: '#847C91', fontSize: 20, fontWeight: 300, textTransform: 'none', mx: 1 }}>{menu.label}</Button>
+              menu.id < 6 && <Button onClick={menu.label === "Products" ? clickHandler : null} key={`d-${menu.id}`} sx={{ color: '#847C91', fontSize: 20, fontWeight: 300, textTransform: 'none', mx: 1,  "&:hover": {
+                color: "#C6ACEC",
+                background:"unset"
+              },}}>{menu.label}</Button>
             ))}
           </Box>
-          <Button variant="contained" color="warning" sx={{ backgroundColor: '#FCC141', color: '#180531', px: 3, py: 1 }}>
+          <Button variant="contained" color="warning" sx={{ fontSize: 18,border: "2px solid transparent", borderRadius:"12px",backgroundColor: '#FCC141', color: '#180531', px: 3, py: 1,"&:hover": {
+              border: "2px solid #B818EF",
+              backgroundColor:"#FCC141"
+            }}}>
             Launch App
           </Button>
         </>
