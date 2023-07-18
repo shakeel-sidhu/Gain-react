@@ -13,7 +13,7 @@ const Roadmap = () => (
   >
     <Divider />
     <Typography sx={{ color: '#97C9D4', my: 3 }}>What to expect?</Typography>
-    <Typography sx={{ fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#CADADC'}}>
+    <Typography sx={{ fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4'}}>
       The Roadmap
     </Typography>
   </Container>

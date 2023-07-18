@@ -9,6 +9,7 @@ const Footer = () => (
       backgroundSize: '100% auto',
       minHeight: 568,
     }}
+    className="comunitygain"
   >
     <Container maxWidth='md' sx={{ mt: { xs: 5, md: 10 } }}>
       <Box sx={{ display: 'flex', textAlign: { xs: 'center', md: 'left' }, mb: 6 }}>

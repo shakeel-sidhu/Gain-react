@@ -6,7 +6,7 @@ import { SUPPORTED_NETWORKS } from '@/src/constants/constants'
 const Networks = () => (
   <Container maxWidth='md' sx={{ textAlign: 'center' }}>
     <Divider />
-    <Typography sx={{ fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#CADADC', py: { xs: 5, md: 10 } }}>
+    <Typography sx={{ fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4', py: { xs: 5, md: 10 } }}>
       Supported Networks
     </Typography>
     <Box sx={{ display: 'flex', justifyContent: 'space-around', mb: { xs: 6, md: 10 } }}>

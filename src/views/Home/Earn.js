@@ -4,11 +4,11 @@ import Divider from '@/src/components/Divider'
 import { EARN_METHODS } from '@/src/constants/constants'
 
 const Earn = () => (
-  <Container>
+  <Container className='earnwithgain'>
     <Divider />
     <Box sx={{ textAlign: 'center', mb: 6 }}>
       <Typography sx={{ color: '#97C9D4', my: 3 }}>Can I make money?</Typography>
-      <Typography sx={{ fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#CADADC' }}>
+      <Typography sx={{ fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4' }}>
         Earn with Mr.Gain
       </Typography>
     </Box>
