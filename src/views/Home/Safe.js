@@ -7,7 +7,6 @@ const Safe = () => (
   <Container
   className="secureGain"
   sx={{
-    background: 'transparent url(safe.png) 0% 0% no-repeat padding-box',
     background: 'transparent url(ShieldNetwork.svg) 0% 0% no-repeat padding-box',
     backgroundSize: { xs: '100% auto', md: '51% auto',backgroundPosition:"center" },
     minHeight: '40vw',

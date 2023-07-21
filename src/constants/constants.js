@@ -173,7 +173,7 @@ export const SUPPORTED_NETWORKS = [
   {
     id: 8,
     name: 'Ethereum',
-    url: 'networks/Ethereum.svg'
+    url: 'networks/ethereum.svg'
   },
   {
     id: 9,
@@ -193,7 +193,7 @@ export const SUPPORTED_NETWORKS = [
   {
     id: 12,
     name: 'Arweave',
-    url: 'networks/Arweave.svg'
+    url: 'networks/arweave.svg'
   },
   {
     id: 13,
@@ -203,7 +203,7 @@ export const SUPPORTED_NETWORKS = [
   {
     id: 14,
     name: 'Polygon',
-    url: 'networks/Polygon.svg'
+    url: 'networks/polygon.svg'
   },
 ]
 

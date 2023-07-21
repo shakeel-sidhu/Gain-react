@@ -20,11 +20,17 @@ const Header = () => {
       if(menuId === 1 && earnWithGain) {
         earnWithGain.scrollIntoView({ behavior: "smooth" });
       };
+      if(menuId === 2) {
+       return window.open('https://www.google.com/', '_blank');
+      };
       if(menuId === 3 && secureGain) {
         secureGain.scrollIntoView({ behavior: "smooth" });
       };
       if(menuId === 4 && comunityGain) {
         comunityGain.scrollIntoView({ behavior: "smooth" });
+      };
+      if(menuId === 5) {
+        return window.open('https://www.google.com/', '_blank');
       };
 
     };
@@ -37,6 +43,7 @@ const Header = () => {
         position: { md: "sticky" },
         top: 0,
         height: { xs: 78, md: 114 },
+        zIndex:999,
         backgroundColor: { xs: "transparent", md: "rgba(3, 1, 11, 0.8)" },
         display: "flex",
         justifyContent: "space-between",
