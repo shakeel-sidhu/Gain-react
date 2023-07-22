@@ -9,20 +9,33 @@ const Safe = () => (
   sx={{
     background: 'transparent url(ShieldNetwork.svg) 0% 0% no-repeat padding-box',
     backgroundSize: { xs: '100% auto', md: '51% auto',backgroundPosition:"center" },
-    minHeight: '40vw',
+    // minHeight: '40vw',
+    mb: 6,
   }}
   >
   <Container
+      sx={{
+        background: 'transparent url(coins2.png) 6% 273px no-repeat padding-box',
+        backgroundSize: { xs: '100% auto', md: '26% auto' },
+        minHeight: '33vw',
+        paddingLeft:"unset !important",
+        paddingRight:"unset !important"
+      }}
+  >
+
+  <Container
     sx={{
-      background: 'transparent url(safe.png) 0% 0% no-repeat padding-box',
-      backgroundSize: { xs: '100% auto', md: '70% auto' },
-      minHeight: '40vw',
+      background: 'transparent url(shield.png) 0% 0% no-repeat padding-box',
+      backgroundSize: { xs: '100% auto', md: '50% auto' },
+      minHeight: '33vw',
+      // paddingLeft:"unset !important",
+      // paddingRight:"unset !important"
     }}
   >
     <Divider />
-    <Box sx={{ width: { md: '70%', lg: '50%' }, textAlign: { xs: 'center', md: 'right' }, ml: { md: 'auto' } }}>
+    <Box sx={{ width: { md: '70%', lg: '54%' }, textAlign: { xs: 'center', md: 'right' }, ml: { md: 'auto' } }}>
       <Typography sx={{ color: '#97C9D4', my: 3 }}>Is it safe?</Typography>
-      <Typography sx={{ fontSize: { xs: 18, md: 48 }, fontWeight: 500, color: '#CADADC', mb: 2 }}>
+      <Typography sx={{ fontFamily:"CoinbaseSansMedium",fontSize: { xs: 18, md: 48 }, fontWeight: 500, color: '#CADADC', mb: 2 }}>
         Your assets, secured
       </Typography>
       <Typography sx={{ fontSize: 16, color: '#90C4CF', mb: 4 }}>
@@ -36,6 +49,7 @@ const Safe = () => (
         ))}
       </Grid>
     </Box>
+  </Container>
   </Container>
   </Container>
 )

@@ -213,23 +213,27 @@ export const SOCIALS = [
     title: 'Telegram',
     content: 'Ask general questions and chat with the worldwide community on Telegram',
     url: 'socials/telegram.svg',
+    link:'https://www.telegram.com/'
   },
   {
     id: 2,
     title: 'Twitter',
     content: 'Follow @MrGainOfficial to get the latest news and updates from across the ecosystem',
     url: 'socials/twitter.svg',
+    link:'https://twitter.com/'
   },
   {
     id: 3,
     title: 'Discord',
     content: 'Join our Discord to debate, offer suggestions and propose improvements',
     url: 'socials/discord.svg',
+    link:'https://discord.com/'
   },
   {
     id: 4,
     title: 'TikTok',
     content: 'Join our TikTok to find some tips and tricks.',
     url: 'socials/tiktok.svg',
+    link:'https://www.tiktok.com/'
   },
 ]

@@ -26,7 +26,7 @@ const Footer = () => (
           {SOCIALS.map(item => (
             <Box key={`si-${item.id}`} sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, alignItems: 'center', mb: 3 }}>
               <Box sx={{ width: { xs: 32, md: 44 }, mr: 2, mt: 1 }}>
-                <img src={item.url}  />
+                <a href={item.link} target={"_blank"}><img src={item.url}  /></a>
               </Box>
               <Box>
                 <Typography sx={{ fontSize: 20, fontWeight: 500, mb: 1 }}>{item.title}</Typography>

@@ -30,7 +30,7 @@ const Earn = () => (
             mb: 3,
           }}
         >
-          <Typography sx={{ fontSize: { xs: 20, md: 30 }, color: '#CADADC', mb: 2 }}>
+          <Typography sx={{ fontFamily:"CoinbaseSansMedium",fontSize: { xs: 20, md: 30 }, color: '#CADADC', mb: 2 }}>
             {item.label}
           </Typography>
           <Typography sx={{ fontSize: { xs: 14, md: 18 }, color: '#868194' }}>

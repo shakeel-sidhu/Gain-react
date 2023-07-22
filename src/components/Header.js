@@ -44,7 +44,7 @@ const Header = () => {
         top: 0,
         height: { xs: 78, md: 114 },
         zIndex:999,
-        backgroundColor: { xs: "transparent", md: "rgba(3, 1, 11, 0.8)" },
+        backgroundColor: { xs: "transparent", md: "#0D022C" },
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -95,12 +95,16 @@ const Header = () => {
             color="warning"
             sx={{
               fontSize: 18,
+              width:'196px',
               border: "2px solid transparent",
               borderRadius: "12px",
               backgroundColor: "#FCC141",
               color: "#180531",
+              lineHeight:"24px",
+              fontWeight:"bold",
               px: 3,
               py: 1,
+              height: "50px",
               "&:hover": {
                 border: "2px solid #B818EF",
                 backgroundColor: "#FCC141",
