@@ -1,0 +1,21 @@
+
+.footerMenu{
+    display:flex;
+}
+.FooterSocial{
+  flex-direction: row;
+}
+.FooterMain{
+    text-align: left;
+}
+@media screen and (max-width: 767px) {
+    .footerMenu{
+        display:none;
+    }
+    .FooterSocial{
+        flex-direction: column;
+    }
+    .FooterMain{
+        text-align: center;
+    }
+  }

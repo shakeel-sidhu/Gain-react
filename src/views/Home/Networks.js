@@ -75,10 +75,10 @@ const Networks = () => {
             {item.id === currextId && <Typography
              sx={{
               color:"#E1E0E5",
-              fontSize:"16px",
+              fontSize:{ xs:"14px", md:"16px" },
               position:'absolute',
-              top:'-32px',
-              left:0,
+              top:{xs:'-29px', md:'-34px'},
+              left:{xs:'-7px',md:0},
               right:0,
               bottom:0,
               margin:"auto",
@@ -96,18 +96,18 @@ const Networks = () => {
       {SUPPORTED_NETWORKS.map(item => {
          return(item.id > 7 && (
           <Box onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler} id={item.id} key={`sn-${item.id}`} sx={{ position:"relative",height: { xs: 40 , md: 86}, flex: 1 }}>
-            {item.id === currextId && <p 
-             style={{
+            {item.id === currextId && <Typography 
+             sx={{
               color:"#E1E0E5",
-              fontSize:"16px",
+              fontSize:{ xs:"14px", md:"16px" },
               position:'absolute',
-              top:"-32px",
-              left:0,
+              top:{xs:'-29px', md:'-34px'},
+              left:{xs:'-7px',md:0},
               right:0,
               bottom:0,
               margin:"auto",
             }}
-            >{hoverdText}</p>
+            >{hoverdText}</Typography>
             }
             <img src={item.url} height='100%' />
           </Box>

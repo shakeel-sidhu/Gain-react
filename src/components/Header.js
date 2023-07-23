@@ -91,14 +91,14 @@ const Header = () => {
             )}
           </Box>
           <Button
+            className="Hello"
             variant="contained"
-            color="warning"
             sx={{
               fontSize: 18,
               width:'196px',
               border: "2px solid transparent",
               borderRadius: "12px",
-              backgroundColor: "#FCC141",
+              backgroundColor: "#FCC141 !important",
               color: "#180531",
               lineHeight:"24px",
               fontWeight:"bold",
@@ -106,9 +106,18 @@ const Header = () => {
               py: 1,
               height: "50px",
               "&:hover": {
+                // backgroundColor: "#FCC141",
+                // width: "196px",
+                // border: "2px solid #B818EF"
                 border: "2px solid #B818EF",
-                backgroundColor: "#FCC141",
+                backgroundColor:{ xs:"#FCC141 !important", md:"#FCC141" } ,
+                width:{ xs:"196px", md:"196px" }
               },
+              "&:active": {
+                backgroundColor: "#FCC141",
+                width: "196px",
+                border: "2px solid #B818EF"
+              }
             }}
           >
             Launch App

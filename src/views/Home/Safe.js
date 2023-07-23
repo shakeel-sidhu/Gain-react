@@ -15,8 +15,11 @@ const Safe = () => (
   >
   <Container
       sx={{
-        background: 'transparent url(coins2.png) 6% 273px no-repeat padding-box',
-        backgroundSize: { xs: '100% auto', md: '26% auto' },
+        background: {
+          xs:'transparent url(coins2.png) 0px 21px no-repeat padding-box',
+          md:"transparent url(coins2.png) 39px 234px no-repeat padding-box"
+        },
+        backgroundSize: { xs: '117px auto', md: '26% auto' },
         minHeight: '33vw',
         paddingLeft:"unset !important",
         paddingRight:"unset !important"
@@ -25,8 +28,11 @@ const Safe = () => (
 
   <Container
     sx={{
-      background: 'transparent url(shield.png) 0% 0% no-repeat padding-box',
-      backgroundSize: { xs: '100% auto', md: '50% auto' },
+      background:{
+        xs:'transparent url(shield.png) -51px 76px no-repeat padding-box',
+        md:'transparent url(shield.png) 0% 28% no-repeat padding-box'
+      },
+      backgroundSize: { xs: '211px auto', md: '50% auto' },
       minHeight: '33vw',
       // paddingLeft:"unset !important",
       // paddingRight:"unset !important"

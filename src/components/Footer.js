@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Container, Typography, Link } from '@mui/material'
 import { FOOTER_MENU, SOCIALS } from '../constants/constants'
+import "./Footer.css"
 
 const Footer = () => (
   <Box
@@ -12,8 +13,8 @@ const Footer = () => (
     className="comunitygain"
   >
     <Container maxWidth='md' sx={{ mt: { xs: 5, md: 10 } }}>
-      <Box sx={{ display: 'flex', textAlign: { xs: 'center', md: 'left' }, mb: 6 }}>
-        <Box sx={{ flexDirection: 'column', justifyContent: 'center', flex: 1, textAlign: 'center', display: { xs: 'none', md: 'flex' } }}>
+      <Box className="FooterMain" sx={{ display: 'flex', textAlign: { xs: 'center', md: 'left' }, mb: 6 }}>
+        <Box className="footerMenu" sx={{ flexDirection: 'column', justifyContent: 'center', flex: 1, textAlign: 'center',}}>
           {FOOTER_MENU.map(item => (
           <Box key={`fm-${item.id}`} sx={{  mb: 5,}}>
             <Link sx={{fontSize: 20,color: '#FFF',textDecoration: "none",cursor:"pointer","&:hover": {
@@ -24,7 +25,7 @@ const Footer = () => (
         </Box>
         <Box sx={{ flex: 1, color: '#FFFFFF', opacity: 0.7 }}>
           {SOCIALS.map(item => (
-            <Box key={`si-${item.id}`} sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, alignItems: 'center', mb: 3 }}>
+            <Box className="FooterSocial" key={`si-${item.id}`} sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
               <Box sx={{ width: { xs: 32, md: 44 }, mr: 2, mt: 1 }}>
                 <a href={item.link} target={"_blank"}><img src={item.url}  /></a>
               </Box>
