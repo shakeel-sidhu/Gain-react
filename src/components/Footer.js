@@ -25,7 +25,7 @@ const Footer = () => (
         </Box>
         <Box sx={{ flex: 1, color: '#FFFFFF', opacity: 0.7 }}>
           {SOCIALS.map(item => (
-            <Box className="FooterSocial" key={`si-${item.id}`} sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+            <Box key={`si-${item.id}`} sx={{ display: 'flex',flexDirection:{xs:"column",sm:"row", md:"row"}, alignItems: 'center', mb: 3 }}>
               <Box sx={{ width: { xs: 32, md: 44 }, mr: 2, mt: 1 }}>
                 <a href={item.link} target={"_blank"}><img src={item.url}  /></a>
               </Box>
