@@ -83,7 +83,7 @@
 .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
-  width: 480px;
+  width: 540px;
   height: 360px;
   margin-left: -400px;
 }

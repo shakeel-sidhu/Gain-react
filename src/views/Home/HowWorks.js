@@ -11,7 +11,7 @@ const HowWorks = () => (
     // background: 'transparent url(coins3.png) 97% -9% no-repeat padding-box',
     // backgroundSize: '27% 36%',
     background:{ 
-      xs:"transparent url(coins3.png) 7% 52% no-repeat padding-box",
+      xs:"transparent url(coins3.png) 7% 50% no-repeat padding-box",
       md:"transparent url(coins3.png) 97% -9% no-repeat padding-box",
     },
     backgroundSize:{xs:"19% 9%", md:"27% 36%"},

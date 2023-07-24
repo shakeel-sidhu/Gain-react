@@ -27,10 +27,16 @@ margin-left: 0;
 .footerMenu{
     display:flex;
 }
+.aboutMain{
+    background-size:100% auto;
+}
 @media screen and (max-width: 1200px) {
     .HowWorksmian {
         background-size:580px;
         background-position:100% 100%;
+    }
+    .aboutMain{
+        background-size:100% auto;
     }
   }
 @media screen and (max-width: 900px) {
@@ -45,6 +51,13 @@ margin-left: 0;
     .slick-list{
         margin-left: 30px;
     }
+    .HowWorksImage{
+        background-size: 19% 17%;
+    }
+    .aboutMain{
+        background-size: 304px;
+        background-position: 264px 178px;
+    }
   }
 @media screen and (max-width: 767px) {
     .HowWorksmian {
@@ -53,6 +66,13 @@ margin-left: 0;
     }
     .footerMenu{
         display:none;
+    }
+    .HowWorksImage{
+        background-size: 19% 9%;
+     }
+    .aboutMain{
+        background-size: 372px;
+        background-position: center bottom;
     }
   }
   
