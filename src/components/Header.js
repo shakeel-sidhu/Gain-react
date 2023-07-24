@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Box, Button, Drawer, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { MENUS } from "../constants/constants";
+import "./Header.css"
 const Header = () => {
   const isMedium = useMediaQuery((theme) =>
     theme.breakpoints.between("xs", "md")
@@ -90,38 +91,13 @@ const Header = () => {
                 )
             )}
           </Box>
+          <Box className="AppButtonMain">
           <Button
-            className="Hello"
-            variant="contained"
-            sx={{
-              fontSize: 18,
-              width:'196px',
-              border: "2px solid transparent",
-              borderRadius: "12px",
-              backgroundColor: "#FCC141 !important",
-              color: "#180531",
-              lineHeight:"24px",
-              fontWeight:"bold",
-              px: 3,
-              py: 1,
-              height: "50px",
-              "&:hover": {
-                // backgroundColor: "#FCC141",
-                // width: "196px",
-                // border: "2px solid #B818EF"
-                border: "2px solid #B818EF",
-                backgroundColor:{ xs:"#FCC141 !important", md:"#FCC141" } ,
-                width:{ xs:"196px", md:"196px" }
-              },
-              "&:active": {
-                backgroundColor: "#FCC141",
-                width: "196px",
-                border: "2px solid #B818EF"
-              }
-            }}
+            className="AppButton"
           >
             Launch App
           </Button>
+          </Box>
         </>
       )}
       {isMedium && (

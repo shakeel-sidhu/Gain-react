@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Button, Container, Typography } from '@mui/material'
+import "./styles/Styled.css"
 
 const Overview = () => (
   <Box
@@ -17,9 +18,12 @@ const Overview = () => (
         <Typography variant='h5' sx={{ fontSize: { xs: 18, md: 25 }, pr: { md: 6 } }}>
           Unlock New Possibilities: Realize Your targeting. Break Free fromTime-Wasting Games.
         </Typography>
-        <Button variant="contained" color="warning" sx={{ backgroundColor: '#FCC141', color: '#180531', px: 3, py: 1, my: 3, mx: 'auto', display: { xs: 'block', md: 'none' } }}>
+        <div className='OverViewButton'>
+        <Button className="LaunchButton" variant="contained" color="warning" sx={{ backgroundColor: '#FCC141', color: '#180531', px: 3, py: 1, my: 3, mx: 'auto', display: { xs: 'block', md: 'none' } }}>
           Launch App
         </Button>
+        </div>
+
       </Box>
     </Container>
   </Box>

@@ -1,0 +1,32 @@
+.AppButton{
+    font-size: 18px;
+    width:196px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background-color: #FCC141 !important;
+    color: #180531;
+    line-height:24px;
+    font-weight:bold !important;
+    height: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    transition: width 2s;
+}
+.AppButton:hover{
+    border: 2px solid #B818EF;
+    background-color: #FCC141;
+    width:196px;
+}
+
+
+@media screen and (max-width: 1200px) {
+     .AppButton{
+        width: unset;
+     }
+     .AppButton:hover{
+        border: 2px solid #B818EF;
+        background-color: #FCC141;
+        width:unset;
+    }
+  }
