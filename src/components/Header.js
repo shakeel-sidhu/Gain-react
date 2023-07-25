@@ -32,7 +32,7 @@ const Header = () => {
       if(menuId === 5) {
         window.open('https://www.google.com/', '_blank');
       };
-      setOpened(!opened)
+      setOpened(false)
     };
   };
 
