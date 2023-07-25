@@ -7,14 +7,11 @@ const About = () => (
   <Container
   className="aboutMain"
     sx={{
-      // background: 'transparent url(about.png) 0% 100% no-repeat padding-box',
       background:{ 
         xs: 'transparent url(about.png) 0% 100% no-repeat padding-box',
         md: 'transparent url(about.png) 0% 100% no-repeat padding-box', 
       },
-      // backgroundSize: { xs:'100% auto',md:'100% auto' },
       height: { xs: 'unset',md: '800px' },
-      // minHeight:{ xs: '50vw' },
       textAlign: 'center',
     }}
   >

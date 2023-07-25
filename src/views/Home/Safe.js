@@ -9,7 +9,6 @@ const Safe = () => (
   sx={{
     background: 'transparent url(ShieldNetwork.svg) 0% 0% no-repeat padding-box',
     backgroundSize: { xs: '100% auto', md: '51% auto',backgroundPosition:"center" },
-    // minHeight: '40vw',
     mb: 6,
   }}
   >
@@ -34,8 +33,6 @@ const Safe = () => (
       },
       backgroundSize: { xs: '211px auto', md: '50% auto' },
       minHeight: '33vw',
-      // paddingLeft:"unset !important",
-      // paddingRight:"unset !important"
     }}
   >
     <Divider />

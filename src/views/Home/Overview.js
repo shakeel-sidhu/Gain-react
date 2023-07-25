@@ -13,7 +13,7 @@ const Overview = () => (
     }}
   >
     <Container>
-      <Box sx={{ maxWidth: 480, margin:{xs:"0 auto", md:"unset"}, color: '#fff', textAlign: { xs: 'center', md: 'left' } }}>
+      <Box sx={{ maxWidth:{xs:480,sm:480,md:540} , margin:{xs:"0 auto", md:"unset"}, color: '#fff', textAlign: { xs: 'center', md: 'left' } }}>
         <Typography variant='h2' sx={{ fontFamily:"CoinbaseSansMedium",lineHight:"75px",fontWeight: 500, fontSize: { xs: 36, md: 70 }, mb: 3, px: { xs: 6, md: 0 } }}>Experience the New Era of NFT to earn.</Typography>
         <Typography variant='h5' sx={{ fontSize: { xs: 18, md: 25 }, pr: { md: 6 } }}>
           Unlock New Possibilities: Realize Your targeting. Break Free fromTime-Wasting Games.

@@ -8,7 +8,6 @@ const Roadmap = () => (
       background: 'transparent url(coins1.png) 100% 100% no-repeat padding-box',
       backgroundSize: 'auto 15%',
       textAlign: 'center',
-      // minHeight: { xs: '94vw', sm: '94vw', md: '130vw', lg: '78vw', xl: '78vw' },
     }}
   >
     <Divider />
