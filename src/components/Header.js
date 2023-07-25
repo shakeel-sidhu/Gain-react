@@ -11,7 +11,6 @@ const Header = () => {
 
   const menuHandler = (event) => {
     const menuId = Number(event.currentTarget.id);
-
     if (typeof document !== "undefined" && menuId) {
 
       const earnWithGain = document.querySelector(".earnwithgain");
@@ -22,7 +21,7 @@ const Header = () => {
         earnWithGain.scrollIntoView({ behavior: "smooth" });
       };
       if(menuId === 2) {
-       return window.open('https://www.google.com/', '_blank');
+       window.open('https://www.google.com/', '_blank');
       };
       if(menuId === 3 && secureGain) {
         secureGain.scrollIntoView({ behavior: "smooth" });
@@ -31,11 +30,10 @@ const Header = () => {
         comunityGain.scrollIntoView({ behavior: "smooth" });
       };
       if(menuId === 5) {
-        return window.open('https://www.google.com/', '_blank');
+        window.open('https://www.google.com/', '_blank');
       };
-
+      setOpened(!opened)
     };
-
   };
 
   return (
@@ -45,8 +43,9 @@ const Header = () => {
         top: 0,
         height: { xs: 78, md: 114 },
         zIndex:999,
-        backgroundColor: { xs: "transparent", md: "#0D022C" },
+        backgroundColor: { xs: "transparent", md: "#000000a3" },
         display: "flex",
+        backdropFilter: {md:"blur(10px)"},
         justifyContent: "space-between",
         alignItems: "center",
         px: { xs: 3.5, md: 4.5 },
@@ -117,6 +116,8 @@ const Header = () => {
           {MENUS.map((menu) => (
             <Button
               key={`m-${menu.id}`}
+              id={menu.id}
+              onClick={menuHandler}
               sx={{ color: "#FFF", textTransform: "none", mb: 0.5 }}
             >
               {menu.label}
