@@ -9,31 +9,41 @@ const Header = () => {
   );
   const [opened, setOpened] = useState(false);
 
+  const scrollToOffset = (element, offset) => {
+    const clientReact = document.body.getBoundingClientRect().top;
+    const elementRectPosition = element.getBoundingClientRect().top;
+    const elementPosition = elementRectPosition - clientReact;
+    const offsetPosition = elementPosition - offset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  };
+
   const menuHandler = (event) => {
     const menuId = Number(event.currentTarget.id);
     if (typeof document !== "undefined" && menuId) {
-
       const earnWithGain = document.querySelector(".earnwithgain");
       const secureGain = document.querySelector(".secureGain");
       const comunityGain = document.querySelector(".comunitygain");
 
-      if(menuId === 1 && earnWithGain) {
-        earnWithGain.scrollIntoView({ behavior: "smooth" });
-      };
-      if(menuId === 2) {
-       window.open('https://www.google.com/', '_blank');
-      };
-      if(menuId === 3 && secureGain) {
-        secureGain.scrollIntoView({ behavior: "smooth" });
-      };
-      if(menuId === 4 && comunityGain) {
-        comunityGain.scrollIntoView({ behavior: "smooth" });
-      };
-      if(menuId === 5) {
-        window.open('https://www.google.com/', '_blank');
-      };
-      setOpened(false)
-    };
+      if (menuId === 1 && earnWithGain) {
+        scrollToOffset(earnWithGain, 100);
+      }
+      if (menuId === 2) {
+        window.open("https://www.google.com/", "_blank");
+      }
+      if (menuId === 3 && secureGain) {
+        scrollToOffset(secureGain, 100);
+      }
+      if (menuId === 4 && comunityGain) {
+        scrollToOffset(comunityGain, 0);
+      }
+      if (menuId === 5) {
+        window.open("https://www.google.com/", "_blank");
+      }
+      setOpened(false);
+    }
   };
 
   return (
@@ -42,10 +52,10 @@ const Header = () => {
         position: { md: "sticky" },
         top: 0,
         height: { xs: 78, md: 114 },
-        zIndex:999,
+        zIndex: 999,
         backgroundColor: { xs: "transparent", md: "#000000a3" },
         display: "flex",
-        backdropFilter: {md:"blur(10px)"},
+        backdropFilter: { md: "blur(10px)" },
         justifyContent: "space-between",
         alignItems: "center",
         px: { xs: 3.5, md: 4.5 },
@@ -82,7 +92,7 @@ const Header = () => {
                       },
                       "&:focus": {
                         background: "unset",
-                      }
+                      },
                     }}
                   >
                     {menu.label}
@@ -91,11 +101,7 @@ const Header = () => {
             )}
           </Box>
           <Box className="AppButtonMain">
-          <Button
-            className="AppButton"
-          >
-            Launch App
-          </Button>
+            <Button className="AppButton">Launch App</Button>
           </Box>
         </>
       )}

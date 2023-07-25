@@ -18,7 +18,7 @@ const About = () => (
     <Divider />
     <Box sx={{ textAlign: 'center', px: 4, mb: 2 }}>
       <Typography sx={{ color: '#97C9D4', mt: 6, mb: 3 }}>What is Mr.Gain?</Typography>
-      <Typography sx={{ fontFamily:"CoinbaseSansMedium", lineHeight:{xs: "41px", md:"51px"},fontSize: { xs: 31, md: 48 }, fontWeight: 500, color: '#CADADC'}}>
+      <Typography sx={{ fontFamily:"CoinbaseTextMedium", lineHeight:{xs: "41px", md:"51px"},fontSize: { xs: 31, md: 48 }, fontWeight: 500, color: '#CADADC'}}>
         The platform built for the new Era of NFT monetization and liqudity
       </Typography>
     </Box>

@@ -67,14 +67,18 @@ margin-left: 0;
     }
     .LaunchButton{
        border: 2px solid transparent;
-       border-radius: 12px;
-       font-family:"CoinbaseSansMedium";
+       border-radius: 6px;
+       font-family:"CoinbaseTextMedium";
+       padding-left: 38px;
+       padding-right: 38px;
+       line-height: 1.75;
+       font-size: 1.25rem;
        
     }
     .OverViewButton>button:hover{
         border: 2px solid #B818EF;
         background-color: #FCC141;
-        width:196px;
+        width:240px;
         top: -5px;
     }
   }
