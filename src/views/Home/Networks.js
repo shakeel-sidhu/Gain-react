@@ -83,7 +83,7 @@ const Networks = () => {
               bottom:0,
               margin:"auto",
               fontFamily:"Coinbase Sans,Regular",
-              width:{width:currextId === 6 ? "97px" : null}
+              width:{width:currextId === 6 ? "100px" : null}
               // currextId === 7 ? width:"97px" : null
             }}
             >{hoverdText}</Typography>
