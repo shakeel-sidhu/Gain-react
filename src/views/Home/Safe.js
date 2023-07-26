@@ -37,7 +37,7 @@ const Safe = () => (
   >
     <Divider />
     <Box sx={{ width: { md: '70%', lg: '54%' }, textAlign: { xs: 'center', md: 'right' }, ml: { md: 'auto' } }}>
-      <Typography sx={{ color: '#97C9D4', my: 3 }}>Is it safe?</Typography>
+      <Typography sx={{fontFamily:"Coinbase Sans,Regular", color: '#97C9D4', my: 3 }}>Is it safe?</Typography>
       <Typography sx={{ fontFamily:"CoinbaseTextMedium",fontSize: { xs: 18, md: 48 }, fontWeight: 500, color: '#CADADC', mb: 2 }}>
         Your assets, secured
       </Typography>

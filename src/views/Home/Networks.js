@@ -65,7 +65,7 @@ const Networks = () => {
   return(
   <Container maxWidth='md' sx={{ textAlign: 'center' }}>
     <Divider />
-    <Typography sx={{ fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4', py: { xs: 5, md: 10 } }}>
+    <Typography sx={{fontFamily:"Coinbase Sans,Regular", fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4', py: { xs: 5, md: 10 } }}>
       Supported Networks
     </Typography>
     <Box sx={{ display: 'flex', justifyContent: 'space-around', mb: { xs: 6, md: 10 } }}>
@@ -82,6 +82,7 @@ const Networks = () => {
               right:0,
               bottom:0,
               margin:"auto",
+              fontFamily:"Coinbase Sans,Regular",
               width:{width:currextId === 6 ? "97px" : null}
               // currextId === 7 ? width:"97px" : null
             }}

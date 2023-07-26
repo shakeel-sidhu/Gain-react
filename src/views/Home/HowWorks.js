@@ -21,7 +21,7 @@ const HowWorks = () => (
   className='HowWorksmian'>
     <Divider />
     <Box sx={{ width: { md: '70%', lg: '58%' } }}>
-      <Typography sx={{ color: '#97C9D4', mt: 6, mb: 3 }}>How it Works?</Typography>
+      <Typography sx={{fontFamily:"Coinbase Sans,Regular", color: '#97C9D4', mt: 6, mb: 3 }}>How it Works?</Typography>
       <Typography sx={{ fontFamily:"CoinbaseTextMedium", lineHeight:{xs:"41px", md:"52px"},fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#CADADC', mb: 6 }}>
         Empowering Creators, Sponsors,and Influencers: The Winning Formula
       </Typography>

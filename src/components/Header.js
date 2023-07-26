@@ -81,6 +81,7 @@ const Header = () => {
                     onClick={menuHandler}
                     key={`d-${menu.id}`}
                     sx={{
+                      fontFamily:"Coinbase Sans, Regular",
                       color: "#847C91",
                       fontSize: 20,
                       fontWeight: 300,
@@ -121,6 +122,7 @@ const Header = () => {
         >
           {MENUS.map((menu) => (
             <Button
+              fontFamily="Coinbase Sans, Regular"
               key={`m-${menu.id}`}
               id={menu.id}
               onClick={menuHandler}

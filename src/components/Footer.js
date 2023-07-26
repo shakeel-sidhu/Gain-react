@@ -17,7 +17,7 @@ const Footer = () => (
         <Box className="footerMenu" sx={{ flexDirection: 'column', justifyContent: 'center', flex: 1, textAlign: 'center',}}>
           {FOOTER_MENU.map(item => (
           <Box key={`fm-${item.id}`} sx={{  mb: 5,}}>
-            <Link sx={{fontSize: 20,color: '#FFF',textDecoration: "none",cursor:"pointer","&:hover": {
+            <Link sx={{fontFamily:"Coinbase Sans, Regular",fontSize: 20,color: '#FFF',textDecoration: "none",cursor:"pointer","&:hover": {
               fontWeight:"bold",
           },}}>{item.title}</Link>
           </Box>
@@ -30,8 +30,8 @@ const Footer = () => (
                 <a href={item.link} target={"_blank"}><img src={item.url}  /></a>
               </Box>
               <Box>
-                <Typography sx={{ fontSize: 20, fontWeight: 500, mb: 1 }}>{item.title}</Typography>
-                <Typography sx={{ fontSize: 14 }}>{item.content}</Typography>
+                <Typography sx={{fontFamily:"CoinbaseTextMedium", fontSize: 20, fontWeight: 500, mb: 1 }}>{item.title}</Typography>
+                <Typography sx={{fontFamily:"Coinbase Sans, Regular", fontSize: 14 }}>{item.content}</Typography>
               </Box>
             </Box>
           ))}
