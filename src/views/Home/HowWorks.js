@@ -27,8 +27,8 @@ const HowWorks = () => (
       </Typography>
       {WINNING_FORMULAS.map(item => (
         <Box key={`fm-${item.id}`} sx={{ width: { md: '70%', lg: '68%' },mb: 3 }}>
-          <Typography sx={{ fontSize: 18, fontWeight: 400, color: '#CADADC' }}>{item.title}</Typography>
-          <Typography sx={{ fontSize: 16, color: '#90C4CF' }}>{item.content}</Typography>
+          <Typography sx={{fontFamily:"CoinbaseTextMedium", fontSize: 18, fontWeight: 400, color: '#CADADC' }}>{item.title}</Typography>
+          <Typography sx={{fontFamily:"Coinbase Sans, Regular", fontSize: 16, color: '#90C4CF' }}>{item.content}</Typography>
         </Box>
       ))}
     </Box>

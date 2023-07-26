@@ -68,7 +68,7 @@ margin-left: 0;
     .LaunchButton{
        border: 2px solid transparent;
        border-radius: 6px;
-       font-family:"CoinbaseTextMedium";
+       font-family:CoinbaseTextMedium;
        padding-left: 38px;
        padding-right: 38px;
        line-height: 1.75;
