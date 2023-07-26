@@ -76,10 +76,7 @@ margin-left: 0;
        
     }
     .OverViewButton>button:hover{
-        border: 2px solid #B818EF;
         background-color: #FCC141;
-        width:240px;
-        top: -5px;
     }
   }
 @media screen and (max-width: 767px) {
