@@ -42,6 +42,9 @@ margin-left: 0;
         height: 259px;
         text-align: left;
     }
+    .SideBar{
+        display: none;
+    }
   }
 @media screen and (max-width: 900px) {
     .HowWorksmian {
@@ -78,6 +81,9 @@ margin-left: 0;
     .OverViewButton>button:hover{
         background-color: #FCC141;
     }
+    .SideBar{
+        display: none;
+    }
   }
 @media screen and (max-width: 767px) {
     .HowWorksmian {
@@ -93,6 +99,21 @@ margin-left: 0;
     .aboutMain{
         background-size: 372px;
         background-position: center bottom;
+    }
+    .SideBar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 7px;
+        top: 35%;
+    }
+    .SideBar a{
+        text-align: right;
+        margin: 10px 0 0 0;
+    }
+    .SideBar a img{
+        width: 45%; 
+        filter: invert(34%) sepia(111%) saturate(6804%) hue-rotate(263deg) brightness(85%) contrast(195%);
     }
   }
   

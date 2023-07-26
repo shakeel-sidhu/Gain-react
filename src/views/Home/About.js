@@ -16,6 +16,11 @@ const About = () => (
     }}
   >
     <Divider />
+    <div className='SideBar'>
+      <a href='https://www.telegram.com/' target="_blank" ><img src='socials/telegram.svg'/></a>
+      <a href='https://twitter.com/' target="_blank" ><img src='socials/twitter.svg'/></a>
+      <a href='https://discord.com/' target="_blank" ><img src='socials/discord.svg'/></a>
+    </div>
     <Box sx={{ textAlign: 'center', px: 4, mb: 2 }}>
       <Typography sx={{fontFamily:"Coinbase Sans,Regular", color: '#97C9D4', mt: 6, mb: 3 }}>What is Mr.Gain?</Typography>
       <Typography sx={{ fontFamily:"CoinbaseTextMedium", lineHeight:{xs: "41px", md:"51px"},fontSize: { xs: 31, md: 48 }, fontWeight: 500, color: '#CADADC'}}>
