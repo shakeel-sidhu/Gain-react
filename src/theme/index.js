@@ -46,7 +46,7 @@ const theme = createTheme({
 			font-style: normal;
 			font-display: swap;
 			font-weight: 300;
-			src:  url(${CoinbaseTextMedium}) format('truetype');
+			src:  url(${CoinbaseSansRegular}) format('truetype');
 		  }
 		`,
 		},

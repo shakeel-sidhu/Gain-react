@@ -15,7 +15,7 @@ const Overview = () => (
     <Container>
       <Box sx={{ maxWidth:{xs:480,sm:480,md:540} , margin:{xs:"0 auto", md:"unset"}, color: '#fff', textAlign: { xs: 'center', md: 'left' } }}>
         <Typography variant='h2' sx={{ fontFamily:"CoinbaseTextMedium",lineHight:"75px",fontWeight: 500, fontSize: { xs: 36, md: 70 }, mb: 3, px: { xs: 6, md: 0 } }}>Experience the New Era of NFT to earn.</Typography>
-        <Typography variant='h5' sx={{fontFamily:"Coinbase Sans,Regular", fontSize: { xs: 18, md: 25 }, pr: { md: 6 } }}>
+        <Typography variant='h5' sx={{fontFamily:"CoinbaseTextMedium", fontSize: { xs: 18, md: 25 }, pr: { md: 6 } }}>
           Unlock New Possibilities: Realize Your targeting. Break Free fromTime-Wasting Games.
         </Typography>
         <div className='OverViewButton'>
