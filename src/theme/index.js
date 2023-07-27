@@ -5,6 +5,27 @@ import CoinbaseTextMedium  from "../../public/resources/fonts/CoinbaseText-Mediu
 
 // Create a theme instance.
 const theme = createTheme({
+	palette: {
+		primary: {
+			main: '#556cd6',
+		},
+		secondary: {
+			main: '#19857b',
+		},
+		error: {
+			main: red.A400,
+		},
+	},
+	typography:{
+		fontFamily: [
+		  "CoinbaseTextMedium",
+		  'sans-serif'
+		].join(','),
+		fontFamily: [
+			"CoinbaseSansRegular",
+			'sans-serif'
+	   ].join(','),
+	},
 	components: {
 		MuiCssBaseline: {
 		  styleOverrides: `
@@ -29,27 +50,6 @@ const theme = createTheme({
 			`,
 		  },
 	  },
-	palette: {
-		primary: {
-			main: '#556cd6',
-		},
-		secondary: {
-			main: '#19857b',
-		},
-		error: {
-			main: red.A400,
-		},
-	},
-	typography:{
-		fontFamily: [
-		  "CoinbaseTextMedium",
-		  'sans-serif'
-		].join(','),
-		fontFamily: [
-			"CoinbaseSansRegular",
-			'sans-serif'
-	   ].join(','),
-	},
 })
 
 export default theme
