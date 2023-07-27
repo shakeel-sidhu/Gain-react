@@ -29,17 +29,17 @@ const theme = createTheme({
 	},
 	components: {
 		MuiCssBaseline: {
-		  styleOverrides: `
-			@font-face {
-				font-family: 'Coinbase Sans';
-				src: url(${CoinbaseWoff2}) format('woff2'),
-					url(${CoinbaseWoff}) format('woff'),
-					url(${CoinbaseSansRegular}) format('truetype');
-				font-weight: 400;
-				font-style: normal;
-				font-display: swap;
-			}
-		  `,
+		//   styleOverrides: `
+		// 	@font-face {
+		// 		font-family: 'Coinbase Sans';
+		// 		src: url(${CoinbaseWoff2}) format('woff2'),
+		// 			url(${CoinbaseWoff}) format('woff'),
+		// 			url(${CoinbaseSansRegular}) format('truetype');
+		// 		font-weight: 400;
+		// 		font-style: normal;
+		// 		font-display: swap;
+		// 	}
+		//   `,
 		styleOverrides: `
 		  @font-face {
 			font-family: 'CoinbaseTextMedium';
