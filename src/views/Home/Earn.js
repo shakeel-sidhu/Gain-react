@@ -32,8 +32,8 @@ const Earn = () => {
     <Divider />
     {/* <Slider /> */}
     <Box sx={{ textAlign: 'center', mb: 6 }}>
-      <Typography sx={{fontFamily:"Coinbase Sans, Regular", color: '#97C9D4', my: 3 }}>Can I make money?</Typography>
-      <Typography sx={{ fontFamily:"Coinbase Sans, Regular", fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4' }}>
+      <Typography sx={{fontFamily:"CoinbaseTextMedium", color: '#97C9D4', my: 3 }}>Can I make money?</Typography>
+      <Typography sx={{ fontFamily:"CoinbaseTextMedium", fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4' }}>
         Earn with Mr.Gain
       </Typography>
     </Box>
@@ -46,7 +46,7 @@ const Earn = () => {
           <Typography sx={{ fontFamily:"CoinbaseTextMedium",fontSize: { xs: 20, md: 30 }, color: '#CADADC', mb: 2 }}>
             {item.label}
           </Typography>
-          <Typography sx={{fontFamily:"Coinbase Sans, Regular", fontSize: { xs: 14, md: 18 }, color: '#868194' }}>
+          <Typography sx={{fontFamily:"CoinbaseTextMedium", fontSize: { xs: 14, md: 18 }, color: '#868194' }}>
             {item.content}
           </Typography>
         </Box>

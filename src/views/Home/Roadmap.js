@@ -11,8 +11,8 @@ const Roadmap = () => (
     }}
   >
     <Divider />
-    <Typography sx={{ fontFamily:"Coinbase Sans, Regular",color: '#97C9D4', my: 3 }}>What to expect?</Typography>
-    <Typography sx={{fontFamily:"Coinbase Sans, Regular", fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4'}}>
+    <Typography sx={{ fontFamily:"CoinbaseTextMedium",color: '#97C9D4', my: 3 }}>What to expect?</Typography>
+    <Typography sx={{fontFamily:"CoinbaseTextMedium", fontSize: { xs: 34, md: 48 }, fontWeight: 500, color: '#97C9D4'}}>
       The Roadmap
     </Typography>
     <div>

@@ -31,24 +31,29 @@ const theme = createTheme({
 		MuiCssBaseline: {
 		  styleOverrides: `
 			@font-face {
-				font-family: 'Coinbase Sans, Regular';
-				src: url(${CoinbaseSansRegular}) format('truetype');
-					// url(${CoinbaseWoff}) format('woff'),
-					// url(${CoinbaseSansRegular}) format('truetype');
-				font-weight: 300;
+				font-family: 'CoinbaseTextMedium';
+				src: url(${CoinbaseTextMedium}) format('truetype');
+				font-weight: 500;
 				font-style: normal;
 				font-display: swap;
 			}
+			@font-face {
+				font-family: 'CoinbaseTextMedium';
+				font-style: normal;
+				font-display: swap;
+				font-weight: normal;
+				src:  url(${CoinbaseSansRegular}) format('truetype');
+			  }
 		  `,
-		styleOverrides: `
-		  @font-face {
-			font-family: 'CoinbaseTextMedium';
-			font-style: normal;
-			font-display: swap;
-			font-weight: 500;
-			src:  url(${CoinbaseTextMedium}) format('truetype');
-		  }
-		`,
+		// styleOverrides: `
+		//   @font-face {
+		// 	font-family: 'CoinbaseTextMedium';
+		// 	font-style: normal;
+		// 	font-display: swap;
+		// 	font-weight: normal;
+		// 	src:  url(${CoinbaseSansRegular}) format('truetype');
+		//   }
+		// `,
 		},
 		// MuiCssBaseline: {
 		// 	styleOverrides: `

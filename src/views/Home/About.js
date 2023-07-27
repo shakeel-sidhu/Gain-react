@@ -27,7 +27,7 @@ const About = () => (
         The platform built for the new Era of NFT monetization and liqudity
       </Typography>
     </Box>
-    <Typography sx={{fontFamily:"Coinbase Sans, Regular", marginTop:{xs:'29px', md:"56px"}, fontSize: 16, color: '#90C4CF', width: { md: '70%', lg: '50%' }, mx: 'auto', mb: 4 }}>
+    <Typography sx={{fontFamily:"CoinbaseTextMedium", marginTop:{xs:'29px', md:"56px"}, fontSize: 16, color: '#90C4CF', width: { md: '70%', lg: '50%' }, mx: 'auto', mb: 4 }}>
       Mr.Gain is a groundbreaking decentralized platform that revolutionizes the world of NFTs through its unique video tricks concept. Utilizing the power of smart contracts, each video edition on Mr.Gain is securely and transparently executed, ensuring fairness and trust. With Mr.Gain, you have the power to unleash your creativity by creating your own personalized edition of the video.
     </Typography>
   </Container>

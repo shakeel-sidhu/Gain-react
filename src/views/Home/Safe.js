@@ -41,7 +41,7 @@ const Safe = () => (
       <Typography sx={{ fontFamily:"CoinbaseTextMedium",fontSize: { xs: 18, md: 48 }, fontWeight: 500, color: '#CADADC', mb: 2 }}>
         Your assets, secured
       </Typography>
-      <Typography sx={{fontFamily:"Coinbase Sans, Regular", fontSize: 16, color: '#90C4CF', mb: 4 }}>
+      <Typography sx={{fontFamily:"CoinbaseTextMedium", fontSize: 16, color: '#90C4CF', mb: 4 }}>
         Rest assured, your experience on Mr. Gain is protected by state-of-the-art smart contracts. Our platform undergoes regular audits to guarantee the security and integrity of your transactions. We prioritize your peace of mind and strive to provide a trustworthy and reliable environment for all our users.
       </Typography>
       <Grid container spacing={2} sx={{ opacity: 0.6, width: { md: '80%' }, ml: 'auto', mb: 3 }}>
