@@ -40,18 +40,27 @@ const theme = createTheme({
 				font-display: swap;
 			}
 		  `,
+		styleOverrides: `
+		  @font-face {
+			font-family: 'CoinbaseTextMedium';
+			font-style: normal;
+			font-display: swap;
+			font-weight: 300;
+			src:  url(${CoinbaseTextMedium}) format('truetype');
+		  }
+		`,
 		},
-		MuiCssBaseline: {
-			styleOverrides: `
-			  @font-face {
-				font-family: 'CoinbaseTextMedium';
-				font-style: normal;
-				font-display: swap;
-				font-weight: 300;
-				src:  url(${CoinbaseTextMedium}) format('truetype');
-			  }
-			`,
-		  },
+		// MuiCssBaseline: {
+		// 	styleOverrides: `
+		// 	  @font-face {
+		// 		font-family: 'CoinbaseTextMedium';
+		// 		font-style: normal;
+		// 		font-display: swap;
+		// 		font-weight: 300;
+		// 		src:  url(${CoinbaseTextMedium}) format('truetype');
+		// 	  }
+		// 	`,
+		//   },
 	  },
 })
 
