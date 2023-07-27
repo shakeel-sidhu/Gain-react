@@ -19,13 +19,13 @@ const theme = createTheme({
 		},
 	},
 	typography:{
-		fontFamily: [
-		  "CoinbaseTextMedium",
-		  'sans-serif'
-		].join(','),
-		fontFamily: [
-			"Coinbase Sans"
-	   ].join(','),
+	// 	fontFamily: [
+	// 	  "CoinbaseTextMedium",
+	// 	  'sans-serif'
+	// 	].join(','),
+	// 	fontFamily: [
+	// 		"Coinbase Sans"
+	//    ].join(','),
 	},
 	components: {
 		MuiCssBaseline: {
