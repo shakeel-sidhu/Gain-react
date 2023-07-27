@@ -5,30 +5,6 @@ import CoinbaseTextMedium  from "../../public/resources/fonts/CoinbaseText-Mediu
 
 // Create a theme instance.
 const theme = createTheme({
-		components: {
-		MuiCssBaseline: {
-		  styleOverrides: `
-			@font-face {
-			  font-family: "Coinbase Sans, Regular";
-			  font-style: normal;
-			  font-display: swap;
-			  font-weight: 400;
-			  src: url(${CoinbaseSansRegular}) format('truetype');
-			}
-		  `,
-		},
-		MuiCssBaseline: {
-			styleOverrides: `
-			  @font-face {
-				font-family: 'CoinbaseTextMedium';
-				font-style: normal;
-				font-display: swap;
-				font-weight: 300;
-				src:  url(${CoinbaseTextMedium}) format('truetype');
-			  }
-			`,
-		  },
-	  },
 	palette: {
 		primary: {
 			main: '#556cd6',
@@ -46,34 +22,35 @@ const theme = createTheme({
 		  'sans-serif'
 		].join(','),
 		fontFamily: [
-			"Coinbase Sans, Regular",
+			"Coinbase Sans",
 			'sans-serif'
 	   ].join(','),
 	},
-	// components: {
-	// 	MuiCssBaseline: {
-	// 	  styleOverrides: `
-	// 		@font-face {
-	// 		  font-family: "Coinbase Sans, Regular";
-	// 		  font-style: normal;
-	// 		  font-display: swap;
-	// 		  font-weight: 400;
-	// 		  src: url(${CoinbaseSansRegular}) format('truetype');
-	// 		}
-	// 	  `,
-	// 	},
-	// 	MuiCssBaseline: {
-	// 		styleOverrides: `
-	// 		  @font-face {
-	// 			font-family: 'CoinbaseTextMedium';
-	// 			font-style: normal;
-	// 			font-display: swap;
-	// 			font-weight: 300;
-	// 			src:  url(${CoinbaseTextMedium}) format('truetype');
-	// 		  }
-	// 		`,
-	// 	  },
-	//   },
+	components: {
+		MuiCssBaseline: {
+		  styleOverrides: `
+			@font-face {
+				font-family: 'Coinbase Sans';
+				src: url('CoinbaseSans-Regular.woff2') format('woff2'),
+					url('CoinbaseSans-Regular.woff') format('woff');
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+		  `,
+		},
+		MuiCssBaseline: {
+			styleOverrides: `
+			  @font-face {
+				font-family: 'CoinbaseTextMedium';
+				font-style: normal;
+				font-display: swap;
+				font-weight: 300;
+				src:  url(${CoinbaseTextMedium}) format('truetype');
+			  }
+			`,
+		  },
+	  },
 })
 
 export default theme
