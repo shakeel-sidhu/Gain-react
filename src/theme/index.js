@@ -19,34 +19,34 @@ const theme = createTheme({
 		},
 	},
 	typography:{
-	// 	fontFamily: [
-	// 	  "CoinbaseTextMedium",
-	// 	  'sans-serif'
-	// 	].join(','),
+		// fontFamily: [
+		//   "CoinbaseTextMedium",
+		//   'sans-serif'
+		// ].join(','),
 	// 	fontFamily: [
 	// 		"Coinbase Sans"
 	//    ].join(','),
 	},
 	components: {
 		MuiCssBaseline: {
-		//   styleOverrides: `
-		// 	@font-face {
-		// 		font-family: 'Coinbase Sans';
-		// 		src: url(${CoinbaseWoff2}) format('woff2'),
-		// 			url(${CoinbaseWoff}) format('woff'),
-		// 			url(${CoinbaseSansRegular}) format('truetype');
-		// 		font-weight: 400;
-		// 		font-style: normal;
-		// 		font-display: swap;
-		// 	}
-		//   `,
+		  styleOverrides: `
+			@font-face {
+				font-family: 'Coinbase Sans, Regular';
+				src: url(${CoinbaseSansRegular}) format('truetype');
+					// url(${CoinbaseWoff}) format('woff'),
+					// url(${CoinbaseSansRegular}) format('truetype');
+				font-weight: 300;
+				font-style: normal;
+				font-display: swap;
+			}
+		  `,
 		styleOverrides: `
 		  @font-face {
 			font-family: 'CoinbaseTextMedium';
 			font-style: normal;
 			font-display: swap;
-			font-weight: 300;
-			src:  url(${CoinbaseSansRegular}) format('truetype');
+			font-weight: 500;
+			src:  url(${CoinbaseTextMedium}) format('truetype');
 		  }
 		`,
 		},

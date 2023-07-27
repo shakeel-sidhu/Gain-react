@@ -19,7 +19,7 @@ export default function MyApp(props) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <link rel="preload" href="CoinbaseSans-Regular.woff2" as="font" type="font/woff2" crossorigin></link>
+        {/* <link rel="preload" href="CoinbaseSans-Regular.woff2" as="font" type="font/woff2" crossorigin></link> */}
         <link
           rel="stylesheet"
           type="text/css"
