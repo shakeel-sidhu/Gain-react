@@ -6,7 +6,7 @@ const nextConfig = {
         config.module.rules.push({
           test: /\.(woff|woff2|eot|ttf|otf)$/,
           use: {
-            loader: 'url-loader', // You can also use 'file-loader' here if you prefer
+            loader: 'file-loader', // You can also use 'file-loader' here if you prefer
             options: {
               limit: 8192, // You can adjust this value based on your needs
               publicPath: '/_next/static/fonts/',
