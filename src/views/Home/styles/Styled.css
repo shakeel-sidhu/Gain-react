@@ -30,6 +30,9 @@ margin-left: 0;
 .aboutMain{
     background-size:100% auto;
 }
+    .SideBar{
+        display: none;
+    }
 @media screen and (max-width: 1200px) {
     .HowWorksmian {
         background-size:580px;
