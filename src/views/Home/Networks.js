@@ -84,7 +84,6 @@ const Networks = () => {
               margin:"auto",
               fontFamily:"CoinbaseTextMedium",
               width:{width:currextId === 6 ? "100px" : null}
-              // currextId === 7 ? width:"97px" : null
             }}
             >{hoverdText}</Typography>
             }

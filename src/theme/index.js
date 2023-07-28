@@ -1,8 +1,6 @@
 import { createTheme } from '@mui/material/styles'
 import { red } from '@mui/material/colors'
 import CoinbaseSansRegular from  "../../public/resources/fonts/CoinbaseSans-Regular-1.ttf";
-import CoinbaseWoff from  "../../public/resources/fonts/CoinbaseSans-Regular.woff";
-import CoinbaseWoff2 from  "../../public/resources/fonts/CoinbaseSans-Regular.woff2";
 import CoinbaseTextMedium  from "../../public/resources/fonts/CoinbaseText-Medium-1.ttf";
 
 // Create a theme instance.
@@ -19,13 +17,10 @@ const theme = createTheme({
 		},
 	},
 	typography:{
-		// fontFamily: [
-		//   "CoinbaseTextMedium",
-		//   'sans-serif'
-		// ].join(','),
-	// 	fontFamily: [
-	// 		"Coinbase Sans"
-	//    ].join(','),
+		fontFamily: [
+		  "CoinbaseTextMedium",
+		  'sans-serif'
+		].join(','),
 	},
 	components: {
 		MuiCssBaseline: {
@@ -45,27 +40,7 @@ const theme = createTheme({
 				src:  url(${CoinbaseSansRegular}) format('truetype');
 			  }
 		  `,
-		// styleOverrides: `
-		//   @font-face {
-		// 	font-family: 'CoinbaseTextMedium';
-		// 	font-style: normal;
-		// 	font-display: swap;
-		// 	font-weight: normal;
-		// 	src:  url(${CoinbaseSansRegular}) format('truetype');
-		//   }
-		// `,
 		},
-		// MuiCssBaseline: {
-		// 	styleOverrides: `
-		// 	  @font-face {
-		// 		font-family: 'CoinbaseTextMedium';
-		// 		font-style: normal;
-		// 		font-display: swap;
-		// 		font-weight: 300;
-		// 		src:  url(${CoinbaseTextMedium}) format('truetype');
-		// 	  }
-		// 	`,
-		//   },
 	  },
 })
 
