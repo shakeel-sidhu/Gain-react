@@ -16,7 +16,7 @@ const Roadmap = () => (
       The Roadmap
     </Typography>
     <div>
-     <img style={{width:"100%", height:"auto", borderRadius:"50%", margin: "35px auto"}} src='/resources/roadmap2.png'/>
+     <img style={{width:"100%", height:"auto", borderRadius:"50%", margin: "35px auto", boxShadow:"0px 1px 35px #29166D82"}} src='/resources/roadmap2.png'/>
     </div>
   </Container>
 )
